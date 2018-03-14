@@ -1,0 +1,63 @@
+body {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.0em;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:center;
+    background-position-y: -1%;
+    height: 800px;
+}
+
+h1 {
+    font-family: 'Flavors', cursive;
+    font-size: 2em;
+    text-align: center;
+    background-color: rgb(80, 81, 82);
+    border-radius: 3rem;
+    color:white;
+}
+div {
+    position: relative;
+    bottom:0%;
+    height:100%;
+}
+
+main {
+    position:absolute;
+    top:40%;
+    left:30%;    
+    margin-right:30%;
+    background-color: rgba(253, 253, 253 0.1);
+    line-height: 1.4em;
+    padding:2%;
+    border-radius:3rem;
+    box-shadow: inset 5px 10px 8px 40px rgba(253, 253, 253 0.1);
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-8deg);
+    z-index: -1;
+}
+
+@media screen and (max-width: 930px) {
+    body { 
+        font-size: 1.2em; 
+     }
+    h1 {
+        font-size: 1.2em;
+    }    
+    main {
+        top:35%;
+    }
+ }
+ @media screen and (max-width: 500px) {
+    body { 
+        font-size: .9em; 
+     }
+    h1 {
+        font-size: 1em;
+    }    
+    main {
+        top:15%;
+    }
+ }
