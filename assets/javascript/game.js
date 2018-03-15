@@ -10,7 +10,7 @@ var game = {
 document.onkeyup = function (uguess) {
     //if first game (after a win, loss or first start) pick new letter.
     if (game.nguess === 9) {
-        var cpi = Math.floor(Math.random() * (game.llst.length - 1)); // computer pick using random number generator [number between 0 and "length of list"-1]
+        var cpi = Math.floor(Math.random() * game.llst.length); // computer pick using random number generator [number between 0 and "length of list"-1]
         game.clp = game.llst[cpi];
     }
     //console.log(game.clp) // for those who wants to have special powers :)
